@@ -18,17 +18,21 @@ Author: "Judy Blume",
 
 function BookList(){
     return <section>
-        <Books img={firstBook.Img} title={firstBook.Title} author={firstBook.Author} />
+        <Books img={firstBook.Img} title={firstBook.Title} author={firstBook.Author}>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, architecto?</p>
+            <button>click me!</button>
+        </Books>
         <Books img={secondBook.Img} title={secondBook.Title}/>
     </section>;
 }
 
 function Books(props){
-    const {img, title, author} = props;
+    const {img, title, author, children} = props;
     return <article>
         <img src={img} alt="" />
         <h2>{title}</h2>
         <h4>{author}</h4>
+        {children}
     </article>
 }
 
