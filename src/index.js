@@ -8,16 +8,16 @@ const Author = "Kai Bird";
 
 function BookList(){
     return <section>
-        <Books />
-        <Books />
+        <Books img={Img} title={Title} author={Author} />
+        <Books img={Img} title={Title}/>
     </section>;
 }
 
-function Books(){
+function Books(props){
     return <article>
-        <img src={Img} alt="" />
-        <h2>{Title}</h2>
-        <h4>{Author}</h4>
+        <img src={props.img} alt="" />
+        <h2>{props.title}</h2>
+        <h4>{props.author}</h4>
     </article>
 }
 
