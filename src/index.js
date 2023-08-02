@@ -2,28 +2,44 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-const firstBook = {
-Img: "https://m.media-amazon.com/images/I/51rBwNT0gEL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
-Title: "American Prometheus",
-Author: "Kai Bird",
-}
 
+const books = [
+{
+img: "https://m.media-amazon.com/images/I/51rBwNT0gEL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+title: "American Prometheus",
+author: "Kai Bird",
+id: 1,
 
-const secondBook = {
-Img: "https://m.media-amazon.com/images/I/51MUIvaD0XL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
-Title: "Summer Sisters",
-Author: "Judy Blume",
-}
+},
 
+{
+img: "https://m.media-amazon.com/images/I/51MUIvaD0XL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+title: "Summer Sisters",
+author: "Judy Blume",
+id: 2,
+},
 
-function BookList(){
-    return <section className="bookList">
-        <Books img={firstBook.Img} title={firstBook.Title} author={firstBook.Author}>
+]
+
+{/* <Books img={firstBook.Img} title={firstBook.Title} author={firstBook.Author}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, architecto?</p>
             <button>click me!</button>
         </Books>
-        <Books img={secondBook.Img} title={secondBook.Title}/>
-    </section>;
+        <Books img={secondBook.Img} title={secondBook.Title}/> */}
+
+function BookList(){
+    return <section className="bookList">
+        {
+            books.map((book) => {
+                const {img, title, author, id } = book;
+                return (
+                    <>
+                <Books img={img} title={title} author={author} key={id}/>
+                </>
+                )
+            })
+}</section>;
+        
 }
 
 
