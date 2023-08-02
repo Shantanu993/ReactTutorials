@@ -5,7 +5,8 @@ import "./index.css";
 
 const books = [
 {
-img: "https://m.media-amazon.com/images/I/51rBwNT0gEL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+// img: "https://m.media-amazon.com/images/I/51rBwNT0gEL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+img: "./assets/book1.jpg",
 title: "American Prometheus",
 author: "Kai Bird",
 id: 1,
@@ -13,7 +14,8 @@ id: 1,
 },
 
 {
-img: "https://m.media-amazon.com/images/I/51MUIvaD0XL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+// img: "https://m.media-amazon.com/images/I/51MUIvaD0XL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+img: "./assets/book2.jpg",
 title: "Summer Sisters",
 author: "Judy Blume",
 id: 2,
