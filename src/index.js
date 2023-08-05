@@ -30,16 +30,19 @@ id: 2,
         <Books img={secondBook.Img} title={secondBook.Title}/> */}
 
 function BookList(){
-    return <section className="bookList">
+    return <>
+    <h1>Best Sellers</h1>
+    <section className="bookList">
         {
             books.map((book) => {
                 return (
-                    <>
+                <>
                 <Books {...book} key={book.id}/>
                 </>
                 )
             })
 }</section>;
+            </>
         
 }
 

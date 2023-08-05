@@ -19,7 +19,13 @@
   }
   .books {
     text-align: center;
-    margin-top: 1rem;
+    margin: 1rem;
     padding: 1rem;
     border: 2px solid rgb(104, 210, 231);
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(227, 113, 67);
+    margin-top: 2rem;
   }
